@@ -1,0 +1,413 @@
+:root{
+    --main-color: #2f2721;
+    --primary-color: #d3ad7f;
+    --black: #13131a;
+    --border: 20px olid rgba(255,255,255,.3);
+}
+*{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .6rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--main-color);
+    padding: 20px 3%;
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+}
+.header .logo span{
+    color: darkorange;
+    font-size: 17px;
+}
+.header .logo{
+    margin-right: auto;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: bold;
+}
+.header.navbar{
+    position: relative;
+}
+.header.navbar #close-navbar{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    color: coral;
+    display: none;
+}
+.header .navbar a{
+    margin-right: 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color:aliceblue ;
+    padding: 15px;
+}
+.header .navbar a:hover{
+    color: darkorange;
+}
+.header-icon{
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    z-index: 9000;
+    column-gap: 22px;
+    color: aliceblue;
+}
+.header-icon .bx:hover{
+    color: coral;
+}
+
+section{
+    padding: 25px 5%;
+}
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 40px;
+    font-size: 15px;
+    border: 1px solid rgb(83, 228, 216);
+    box-shadow: 10px 10px 10px  rgb(83, 228, 216);
+    border-radius: 30px;
+    color: rgb(82, 237, 159);
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left: 670px;
+}
+.btn:hover{
+    color: rgb(244, 132, 195);
+    font-weight: bold;
+    box-shadow: 10px 10px 10px rgb(244, 132, 195);
+    border: 1px solid rgb(244, 132, 195);
+}
+.home{
+    display: flex;
+    align-items: center;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.home .content{
+    max-width: 200rem;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    transform: translateY(50%);
+}
+.home .content h3{
+    display: flex;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: azure;
+    margin-bottom: 20px;
+    margin-left: 550px;
+}
+.home .content h4{
+    font-size: 20px;
+    color: beige;
+    margin-left: 550px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  
+} 
+.heading{
+    text-align: center;
+    color: brown;
+    margin-top: 5px;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+.about{
+    padding: 15px 15px;
+    background-image: url(images/home.webp);
+    border-radius: 20px;
+    background-repeat: repeat-y;
+    background-position: center;
+    width: 1000px;
+    height: 500px;
+    margin-left: 50px;
+    background-size: cover;
+}
+.about .text{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 510px;
+}
+.about .text .img{
+    padding: -1px;
+    flex: 1 1 20px;
+}
+.about .text .about-text{
+    flex: 1 1 -10px;
+    padding: 5px 0;
+}
+.about-text h3{
+    font-size: 16px;
+    color: indianred;
+    padding: 3 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-text p{
+    padding: 7px 0;
+    line-height: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+.line{
+    width: 50px;
+    height: 2px;
+    background-color: rgb(164, 160, 169);
+    margin-left: 3px;
+}
+.b .button{
+    display: block;
+    margin: auto;
+    background-color: rgb(163, 163, 162);
+    border-radius: 30px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding: 5px 0px;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #641472;
+}
+.b .button:hover{
+    font-weight: bold;
+    transition: 2s ease-in;
+    background-color: rgb(2, 84, 84);
+    color: rgb(223, 197, 166);
+}
+
+.menu .title{
+    margin-top: 170px;
+}
+.menu .cotainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+    margin-top: 50px;
+    padding: 5px;
+}
+.container .box{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #2f2721;
+}
+.container img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px ;
+    background: hsl(0, 0%, 93%);
+    border-radius: 15px;
+}
+.container .box h3{
+    padding: 5px 0px;
+    font-size: 15px;
+}
+.container .box .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .box .content span{ 
+    display: block;
+    padding: 2px 0px;
+    border-radius: 10px;
+    background-color: #a0a0a0;
+    height: 25px;
+    width: 65px;
+    font-size: 14px;
+    text-align: center;
+}
+.container .box .content a{
+    padding: 2px;
+    color: rgb(199, 90, 13);
+    font-weight: 500;
+}
+.container .box .content a:hover{
+    background-color: snow;
+    border: 2px solid red;
+    color: red;
+    transition: 2s linear;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px red;
+}
+.contact .head{
+    text-transform: uppercase;
+    text-align: center;
+}
+.row .image img{
+    padding: 25px 0px;
+    height: 450px;
+}
+.row .image{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 30px;
+    flex: 1 1 30px;
+}
+.contact .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.row form{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 60px;
+    flex: 1 1 280px;
+    border: 2px solid black;
+    padding: 15px 10px;
+}
+.row form h3{
+    text-align: center;
+    color: chocolate;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.row form .inputbox{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(160, 158, 156);
+    border: bisque;
+    border-radius: 15px;
+}
+.row form .inputbox span{
+    color: #211e1d;
+    padding-left: 3px;
+    font-size: 15px;
+}
+.row form .inputbox i{
+    margin-left: 5px;
+}
+.row form .inputbox input{
+    width: 100%;
+    padding: 10px; 
+    color: #2f2721;
+    text-transform: none;
+    background: none;
+}
+.button{
+    background-color: rgb(95, 222, 247);
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 250px;
+}
+.button:hover{
+    background-color: darkblue;
+    color: antiquewhite;
+}
+.footer{
+    background-color: #2f2721;;
+}
+.footer .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    gap: 5px;
+    margin-top: 10px;
+}
+.footer .content .box img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+.footer .content .box h2{
+    font-size: 15px;
+    color: #fddcc4;
+    padding: 2px;
+}
+.footer .content .box p{
+    font-size: 15px;
+    line-height: 2;
+    color: rgb(222, 217, 217);
+    padding: 5px 0px;
+}
+.footer .content .box .email{
+    font-size: 15px;
+    line-height: 2;
+    color: rgb(222, 217, 217);
+    padding: 5px 0px;
+    display: block;
+}
+.footer .content .box .email:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.social{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: baseline;
+}
+.social a .bx{
+    font-size: 40px;
+    color: #f5f4f3;
+    border-radius: 3px;
+    border-radius: 20px;
+    box-shadow: 5px 3px 4px rgb(112, 201, 236);
+}
+.social a .bx:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 5px 3px 4px black;
+}
+.social .line{
+    width: 50%;
+    height: 5px;
+}
